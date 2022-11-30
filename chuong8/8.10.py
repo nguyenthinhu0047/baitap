@@ -1,4 +1,11 @@
-x = int(input('nhập 1 số nguyên:'))
-n = float(input('nhập vào 1 số thực:'))
-a = (x*x + x +1)^n + (x*x - x + 1)^n
-print("A=",a)
+a=int(input("Nhập số lượng số nguyên N: "))
+j=[]
+for i in range(1,a+1):
+    print("Nhập số hạng thứ: ",i)
+    b=int(input())
+    j.append(b)
+c=0
+for v in j:
+    c=c+v
+print("tổng",a,"số hạng là:")
+print(c)
