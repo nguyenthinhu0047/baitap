@@ -1,4 +1,3 @@
-def UCLN( a,  b):
 
   while ( a != b):
     
