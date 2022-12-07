@@ -1,7 +1,12 @@
+def songuyento(n):
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count += 1
+    if count == 2:
+        return True
+    return False
 
-x=int(input("Nhập số nguyên tố:"))
-def kiem_tra_so_nguyen_to(x):
-     if x%1==0 and x%x == 0:
-        print("True",x)
-     if x%2==0:
-        print("Flase",x)
+
+n = int(input())
+print(songuyento(n))
