@@ -1,0 +1,8 @@
+s=input("Nhập chuỗi s:")
+s_sub=input("Nhập chuỗi s_sub:")
+s_find=input("Nhập chuỗi s_find:")
+s_replace=input("Nhập chuỗi s_replace:")
+print(s.strip())
+print(s.replace(s_find,s_replace))
+print(s.count(s_sub))
+print(s.capitalize ())
