@@ -37,9 +37,9 @@ def tinh_tien_tro_cap(ho_ngheo,so_tv):
     elif (ho_ngheo and 3 <= so_tv < 5):
                 return 800000*so_tv  
     elif (ho_ngheo and 1<= so_tv <3):
-                return 500000*so_tv           
-print(tinh_tien_tro_cap(ho_ngheo,so_tv))
-def sap_xep_dan(lsthodan):
+                return 500000*so_tv          
+
+def sap_xep_hd(lsthodan):
     lsthodan.sort()
     lsthodan.reverse()
 print(lsthodan)
