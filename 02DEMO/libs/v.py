@@ -1,6 +1,6 @@
 # quan ly hoa don
 lsthodan =[]
-  #Hàm 3 
+
 def mo_file_ho_dan(lsthodan):
     return
 def luu_danh_sach_ho_dan(lsthodan):
@@ -16,40 +16,23 @@ def them_ho_dan(lsthodan):
         ho_ngheo=input('hộ là')
         lsthodan.append({'ma_ho':ma_ho,'ten_ho':ten_ho,\
             'so_tv':so_tv,'muc_thu_nhap':muc_thu_nhap,'ho_ngheo':ho_ngheo})
-#Hết lệnh append
+
         tt=input('Bạn có muốn tiếp tục thêm ? (1:TT)')
         if tt!='1':
             break
         return
 print(them_ho_dan(lsthodan))
 print(lsthodan)
- 
- #Hàm 4
-
-print('CHƯƠNG TRÌNH QUẢN LÝ HOÁ ĐƠN')
-while True:
-    print('1:Thêm hộ dân')
-    print('2: Danh sách danh sách hộ dân')
-    print('3: Tra cứu hộ dân')
-    print('4: Xoá hoá đơn')
-    print('5:Thống kê')
-    print('6:Lưu danh sách ho dan ra file csv')
-
-    chon=int(input('Chọn chức năng cần thực hiện: '))
-    if chon==1:
-        them_ho_dan(lsthodan)
-    elif chon==2:
-        in_ds_ho_dan(lsthodan)
-    elif chon==3:
-        tra_cuu_hoa_don(lsthodan)
-    elif chon==4:
-        xoa_ho_dan(lsthodan)
-    elif chon==5:
-        thong_ke(lsthodann)
-    elif chon==6:
-        luu_danh_sach_ho-dan(lsthodan) 
-    else:
-        print('Misson complete!!!')
-        break 
-
- 
+def in_ds_ho_dan(lsthodan):
+    print('{:12}{:12}{:18}{:18}'.format('ma_ho','ten_ho','so_tv','muc_thu_nhap'))
+    for hd in lsthodan:
+     print('{:12}{:12}{:18}{:18}'.format(hd['ma_ho'],hd['ten_hd'],hd['so_tv'],hd['muc_thu_nhap']))
+    return
+print(in_ds_hoa_don(lsthodan))
+def tinh_tien_tro_cap(so_tv):
+    if so_tv >=5:
+                return 1000000*so_tv
+    elif 3 <= so_tv < 5:
+                return 800000*so_tv  
+    elif 1<= so_tv <3:
+                return 500000*so_tv  
