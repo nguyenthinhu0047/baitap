@@ -42,4 +42,4 @@ def tinh_tien_tro_cap(ho_ngheo,so_tv):
 def sap_xep_hd(lsthodan):
     lsthodan.sort()
     lsthodan.reverse()
-print(lsthodan)
+print(lsthodan) 
