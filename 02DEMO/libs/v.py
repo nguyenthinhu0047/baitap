@@ -23,16 +23,16 @@ def them_ho_dan(lsthodan):
         return
 print(them_ho_dan(lsthodan))
 print(lsthodan)
-def in_ds_ho_dan(lsthodan):
+def ds_ho_dan(lsthodan):
     print('{:12}{:12}{:18}{:18}'.format('ma_ho','ten_ho','so_tv','muc_thu_nhap'))
     for hd in lsthodan:
      print('{:12}{:12}{:18}{:18}'.format(hd['ma_ho'],hd['ten_hd'],hd['so_tv'],hd['muc_thu_nhap']))
     return
-print(in_ds_hoa_don(lsthodan))
+print(ds_ho_dan(lsthodan))
 def tinh_tien_tro_cap(so_tv):
     if so_tv >=5:
                 return 1000000*so_tv
     elif 3 <= so_tv < 5:
                 return 800000*so_tv  
     elif 1<= so_tv <3:
-                return 500000*so_tv  
+                return 500000*so_tv           
