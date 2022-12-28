@@ -15,4 +15,14 @@ for num in lst:
 print(sum)
 y = lst.count(x)
 print(x,'xuất hiện ',y,'lần trong list')
-lst.find(5)
+d=0
+for i in lst:
+    if x<i:
+        d+=1
+if d==len(lst):
+    print(x," không lớn hơn tất cả số trong list")
+else:
+    print(x," lớn nhỏ số một vài số trong list")
+for j in range(len(lst)):
+    if x<lst[j]:
+        print(lst[j])
